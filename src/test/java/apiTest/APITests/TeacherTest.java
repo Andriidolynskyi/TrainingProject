@@ -13,7 +13,6 @@ import org.junit.Test;
 import utilities.APIUtil;
 import utilities.Config;
 
-import java.util.List;
 
 public class TeacherTest {
 
