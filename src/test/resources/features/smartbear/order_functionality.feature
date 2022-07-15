@@ -8,6 +8,8 @@ Feature: All functionality related to making the order
     When user should be able fill all field to make the order
     Then Verify if the user did the order and able to see in a list on the main page
 
+
+
   @Smoke
   Scenario Outline: Verification of the order functionality with valid credentials
     Given user should be able go to the website
