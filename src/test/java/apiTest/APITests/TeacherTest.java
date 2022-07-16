@@ -77,6 +77,7 @@ public class TeacherTest {
 
         System.out.println(responseBody.getTeachers().get(0).getFirstName());
 
+
     }
 
     @Test
@@ -86,7 +87,8 @@ public class TeacherTest {
 
         ObjectMapper objectMapper = new ObjectMapper();
         ResponseBody responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
-        responseBody.getTeachers().get(0).setFirstName("Leo");
+        responseBody.getTeachers().get(0).setFirstName("Leoneli");
+        responseBody.getTeachers().get(0).setSalary(5000);
 
         Teacher teacher = new Teacher();
 
@@ -109,7 +111,8 @@ public class TeacherTest {
 //        objectMapper = new ObjectMapper();
         String teacherJS = objectMapper.writeValueAsString(responseBody.getTeachers().get(0));
 
-        response = RestAssured.given().contentType(ContentType.JSON).body(teacherJS).put(Config.getProperty("baseURL") + "/teacher/update");
+        response = RestAssured.given()
+                .contentType(ContentType.JSON).body(teacherJS).put(Config.getProperty("baseURL") + "/teacher/update");
 
         System.out.println(response.statusCode());
         System.out.println(response.asString());
