@@ -131,7 +131,7 @@ public class TeacherTest {
 
     @Test
     public void getOneTeacherUtility() {
-        String resource = "/teacher/20671";
+        String resource = "/teacher/21883";
         APIUtil.hitGET(resource);
     }
 
@@ -143,7 +143,7 @@ public class TeacherTest {
 
     @Test
     public void deleteOneTeacher(){
-        String resource = "/teacher/delete/20676";
+        String resource = "/teacher/delete/21882";
         APIUtil.hitDELETE(resource);
     }
 
