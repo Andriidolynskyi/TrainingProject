@@ -8,8 +8,7 @@ import lombok.Data;
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
- //jhbj
-    //jbhvgcy
+
     private int studentId;
     private String firstName;
     private String lastName;
