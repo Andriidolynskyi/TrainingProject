@@ -1,5 +1,6 @@
 Feature: Deleting teacher service
 
+@test
   @teacherDelete
   Scenario: Positive teacher deleting
     Given user deletes teacher at "/teacher/delete/21885"
