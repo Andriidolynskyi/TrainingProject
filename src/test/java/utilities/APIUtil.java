@@ -14,7 +14,7 @@ public class APIUtil {
     // CRUD Operation. One method for each operation.
     // One method should handle any APIs we are hitting.
 
-    private static apiTest.ResponseBody responseBody;
+    private static ResponseBody responseBody;
 
     public static void hitGET(String resource){
         String uri = Config.getProperty("baseURL") + resource;
@@ -26,14 +26,14 @@ public class APIUtil {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try{
-            responseBody = objectMapper.readValue(response.asString(), apiTest.ResponseBody.class);
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
         }
         catch (Exception j){
             j.printStackTrace();
         }
     }
 
-    public static apiTest.ResponseBody getResponseBody(){
+    public static ResponseBody getResponseBody(){
         return responseBody;
     }
 
@@ -54,7 +54,7 @@ public class APIUtil {
         System.out.println("STATUS CODE: " + response.statusCode());
 
         try{
-            responseBody = objectMapper.readValue(response.asString(), apiTest.ResponseBody.class);
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
         }
         catch (Exception j){
             j.printStackTrace();
@@ -73,7 +73,7 @@ public class APIUtil {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try{
-            responseBody = objectMapper.readValue(response.asString(), apiTest.ResponseBody.class);
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
         }
         catch (Exception j){
             System.err.println("WARNING!\nResponse couldn't map properly with Jackson Library");

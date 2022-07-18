@@ -1,5 +1,6 @@
 package apiTest;
 
+import apiTest.ApiModels.RequestBody;
 import apiTest.ApiModels.student.Student;
 import apiTest.ApiModels.teacher.Teacher;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -15,6 +16,8 @@ public class ResponseBody {
 
     List<Student> students;
     List<Teacher> teachers;
+
+    String message;
 
 
 }
