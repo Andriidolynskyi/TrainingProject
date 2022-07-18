@@ -8,5 +8,6 @@ Feature: All testings related to End to End for UI vs API
     And user cross validates teacher details on API and on UI
 
     Examples:
-      | resource      | teacherID |
-      | /teacher/21887 | 21887      |
+      | resource       | teacherID |
+      | /teacher/21887 | 21887     |
+      | /teacher/21888 | 21888     |

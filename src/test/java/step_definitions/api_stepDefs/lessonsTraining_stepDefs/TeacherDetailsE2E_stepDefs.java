@@ -1,8 +1,12 @@
 package step_definitions.api_stepDefs.lessonsTraining_stepDefs;
 
+import apiTest.ResponseBody;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.junit.Assert;
+import org.junit.Test;
 import pages.cbtTraining.AllTeachersPage;
 import pages.cbtTraining.CBTHomepage;
 import pages.cbtTraining.SpecificTeacherPage;
@@ -55,6 +59,12 @@ public class TeacherDetailsE2E_stepDefs {
         Assert.assertEquals("e2e salary verification failed", APIUtil.getResponseBody().getTeachers().get(0).getSalary(),Integer.parseInt(specificTeacherPage.salary.getText()));
         Assert.assertEquals("e2e section verification failed", APIUtil.getResponseBody().getTeachers().get(0).getSection(),specificTeacherPage.section.getText());
         Assert.assertEquals("e2e subject verification failed", APIUtil.getResponseBody().getTeachers().get(0).getSubject(),specificTeacherPage.subject.getText());
+
+    }
+
+    @Test
+    public void authentification(){
+
 
     }
 
