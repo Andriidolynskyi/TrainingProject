@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/",
         glue = "step_definitions",
-        tags = "@e2e",
+        tags = "@postAPI",
         dryRun = false
         //dryRun, plugin, tags...
 )

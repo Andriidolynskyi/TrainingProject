@@ -62,10 +62,5 @@ public class TeacherDetailsE2E_stepDefs {
 
     }
 
-    @Test
-    public void authentification(){
-
-
-    }
 
 }
