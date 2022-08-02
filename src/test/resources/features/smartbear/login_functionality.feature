@@ -1,6 +1,7 @@
 Feature: All features related to login functionality
 
 
+  @smartBear
   Scenario: Verification of the login functionality with valid credentials
 
     Given user should be able go to the website

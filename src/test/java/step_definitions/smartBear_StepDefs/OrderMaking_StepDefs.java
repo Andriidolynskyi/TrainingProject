@@ -106,7 +106,7 @@ public class OrderMaking_StepDefs {
                 check = true;
             }
         }
-        Assert.assertTrue("Order NOT on a list", check);
+        Assert.assertFalse("Order NOT on a list", check);
 
     }
 
