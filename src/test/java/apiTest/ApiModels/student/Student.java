@@ -13,7 +13,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private int batch;
-    private String emailAddress;
+
     private String joinDate;
     private String major;
     private String birthDate;

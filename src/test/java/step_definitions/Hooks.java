@@ -13,21 +13,21 @@ public class Hooks {
     @Before
     public void setup(Scenario scenario){
         // Anything that you want to run before each Scenario
-        TempStorage.clear();
+//        TempStorage.clear();
 
     }
 
     @After
     public void tearDown(Scenario scenario){
 
-        if (scenario.isFailed()){
-
-            byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-
-            scenario.embed(screenshot,"image/png");
-
-
-        }
+//        if (scenario.isFailed()){
+//
+//            byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+//
+//            scenario.embed(screenshot,"image/png");
+//
+//
+//        }
 
     }
 

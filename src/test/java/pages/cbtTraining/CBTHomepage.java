@@ -17,4 +17,13 @@ public class CBTHomepage {
     @FindBy(xpath = "//ul[@class='list-unstyled']/li/a[.='All Teacher']")
     public WebElement allTeachersModule;
 
+    @FindBy(xpath = "//span[.=' Students']")
+    public WebElement studentModule;
+
+    @FindBy(xpath = "//a[.='All Students']")
+    public WebElement allStudent;
+
+    @FindBy(xpath = "//a[.='Add Student']")
+    public WebElement addStudent;
+
 }
