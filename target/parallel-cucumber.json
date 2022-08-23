@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1264554,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "GET one student",
+        "description": "",
+        "id": "scenarios-related-to-get-request;get-one-student",
+        "after": [
+          {
+            "result": {
+              "duration": 25389,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3215916126,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be able to get one specific user \"/student/34165\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/student/34165\"",
+                  "offset": 45
+                }
+              ],
+              "location": "GEToneStudent_stepDefs.user_should_be_able_to_get_one_specific_user(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3048998,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "print and verify all information about user",
+            "match": {
+              "location": "GEToneStudent_stepDefs.print_and_verify_all_information_about_user()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GETStudent"
+          }
+        ]
+      }
+    ],
+    "name": "Scenarios related to GET request",
+    "description": "",
+    "id": "scenarios-related-to-get-request",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/api/student/studentGETService.feature",
+    "tags": []
+  }
+]
