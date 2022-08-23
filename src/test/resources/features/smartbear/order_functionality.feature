@@ -10,7 +10,7 @@ Feature: All functionality related to making the order
 
 
 
-  @Smoke
+  @smartBear
   Scenario Outline: Verification of the order functionality with valid credentials
     Given user should be able go to the website
     When user should be able to enter valid credential

@@ -29,7 +29,7 @@ public class LoginSmartBear_StepDefs {
         String expectedTitle = "Web Orders";
         String actualTitle = Driver.getDriver().getTitle();
 
-        Assert.assertEquals("Titles NOT hte same",expectedTitle,actualTitle);
+        Assert.assertNotEquals("Titles NOT hte same",expectedTitle,actualTitle);
     }
 
 }

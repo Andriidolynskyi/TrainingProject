@@ -1,6 +1,6 @@
 Feature: Related to creating a teacher
 
-  @postAPI
+  @e2e
   Scenario: Creating a teacher with positive scenario
     Given creating teacher in java object
     And hit POST methode "/teacher/create" to create a teacher

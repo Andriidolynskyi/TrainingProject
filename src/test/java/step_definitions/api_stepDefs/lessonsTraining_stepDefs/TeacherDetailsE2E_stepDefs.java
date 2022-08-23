@@ -62,5 +62,18 @@ public class TeacherDetailsE2E_stepDefs {
 
     }
 
+    @Test
+    public void task1(){
+
+        String str = "abcd";
+
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.println(str.charAt(i) + str.charAt(j) + ",");
+            }
+
+        }
+
+    }
 
 }

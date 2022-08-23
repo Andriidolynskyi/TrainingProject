@@ -38,14 +38,14 @@ public class Creating {
         student.setFirstName("Cristiano");
         student.setLastName("Ronaldo");
         student.setBatch(14);
-        student.setEmailAddress("testtttt@gmail.com");
+//        student.setEmailAddress("testtttt@gmail.com");
         student.setJoinDate("10/10/2016");
         student.setMajor("major");
         student.setBirthDate("03/03/1993");
         student.setPassword("1234567890");
         student.setSubject("Math");
         student.setGender("Male");
-        student.setEmailAddress("addmisiion");
+//        student.setEmailAddress("addmisiion");
         student.setSection("section");
         student.setAdmissionNo("addNo");
 
