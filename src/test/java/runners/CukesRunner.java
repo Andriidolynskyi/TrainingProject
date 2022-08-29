@@ -11,11 +11,11 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/",
         glue = "step_definitions",
-        tags = "@GETStudent",
+        tags = "@PUTstudent",
         dryRun = false
         //dryRun, plugin, tags...
 )
 
 public class CukesRunner {
-//Yo
+
 }

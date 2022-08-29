@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 1264554,
+              "duration": 782643,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 9,
-        "name": "GET one student",
+        "line": 4,
+        "name": "PUT one specific student",
         "description": "",
-        "id": "scenarios-related-to-get-request;get-one-student",
+        "id": "scenarios-related-to-update-student;put-one-specific-student",
         "after": [
           {
             "result": {
-              "duration": 25389,
+              "duration": 19796,
               "status": "passed"
             },
             "match": {
@@ -34,47 +34,53 @@
         "steps": [
           {
             "result": {
-              "duration": 3215916126,
+              "duration": 2850456586,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user should be able to get one specific user \"/student/34165\"",
+            "line": 5,
+            "name": "GET and UPDATE student \"/student/33062\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"/student/34165\"",
-                  "offset": 45
+                  "val": "\"/student/33062\"",
+                  "offset": 23
                 }
               ],
-              "location": "GEToneStudent_stepDefs.user_should_be_able_to_get_one_specific_user(String)"
+              "location": "PUTStudent_stepDefs.get_and_UPDATE_student(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3048998,
+              "duration": 84523317,
               "status": "passed"
             },
-            "line": 11,
-            "name": "print and verify all information about user",
+            "line": 6,
+            "name": "Check if the student was updated \"/student/33062\"",
             "match": {
-              "location": "GEToneStudent_stepDefs.print_and_verify_all_information_about_user()"
+              "arguments": [
+                {
+                  "val": "\"/student/33062\"",
+                  "offset": 33
+                }
+              ],
+              "location": "PUTStudent_stepDefs.check_if_the_student_was_updated(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@GETStudent"
+            "name": "@PUTstudent"
           }
         ]
       }
     ],
-    "name": "Scenarios related to GET request",
+    "name": "Scenarios related to UPDATE student",
     "description": "",
-    "id": "scenarios-related-to-get-request",
+    "id": "scenarios-related-to-update-student",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/api/student/studentGETService.feature",
+    "uri": "src/test/resources/features/api/student/PUTstudent.feature",
     "tags": []
   }
 ]
