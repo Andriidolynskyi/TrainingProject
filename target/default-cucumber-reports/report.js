@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/api/student/studentGETService.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/api/student/PUTstudent.feature");
 formatter.feature({
-  "name": "Scenarios related to GET request",
+  "name": "Scenarios related to UPDATE student",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "GET one student",
+  "name": "PUT one specific student",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@GETStudent"
+      "name": "@PUTstudent"
     }
   ]
 });
@@ -18,21 +18,21 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be able to get one specific user \"/student/34165\"",
+  "name": "GET and UPDATE student \"/student/33062\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "GEToneStudent_stepDefs.user_should_be_able_to_get_one_specific_user(String)"
+  "location": "PUTStudent_stepDefs.get_and_UPDATE_student(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "print and verify all information about user",
+  "name": "Check if the student was updated \"/student/33062\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "GEToneStudent_stepDefs.print_and_verify_all_information_about_user()"
+  "location": "PUTStudent_stepDefs.check_if_the_student_was_updated(String)"
 });
 formatter.result({
   "status": "passed"
